@@ -10,33 +10,13 @@
 export default {
   data() {
     return {
-      events: [
-        {
-          id: 1,
-          title: 'Zipline in the trees',
-          location: 'To be Decided',
-          date: 'October 17, 2022',
-          time: '12:00',
-        },
-        {
-          id: 3,
-          title: 'Track Day',
-          description: 'Get some serious speed',
-          location: 'Exotic Car Rentals',
-          date: 'October 9th, 2022',
-          time: '12pm',
-        },
-        {
-          id: 2,
-          title: 'Indoor Sky Diving',
-          description: 'Wanna fall from the sky?',
-          location: 'West-End',
-          date: 'November 2022',
-          time: '12pm',
-        },
-      ],
+      events: [],
     }
   },
+
+  // async asyncData({ axios }) {
+  //   events = await axios.get("")
+  // },
 }
 </script>
 
