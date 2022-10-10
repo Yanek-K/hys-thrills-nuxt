@@ -10,18 +10,10 @@ export default {
   async asyncData({ params, $axios }) {
     try {
       const event = await $axios.$get(
-        `https://my-json-server.typicode.com/Yanek-K/hys-thrills-nuxt/events/${params.slug}`
+        `https://my-json-server.typicode.com/Yanek-K/hys-thrills-nuxt/events/${params.id}`
       )
-      console.log(event)
-      return event
-    } catch (e) {
-      console.log(e.message)
-    }
-  },
-  data() {
-    return {
-      event: {},
-    }
+      return { event }
+    } catch (e) {}
   },
 }
 </script>
@@ -29,10 +21,11 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: black;
 }
 p {
   color: white;
+  font-size: 20px;
 }
 </style>

@@ -7,7 +7,7 @@
     </div>
     <div class="details">
       <!-- Link to view and register-->
-      <nuxt-link :to="`/events/${event.slug}`">View</nuxt-link>
+      <nuxt-link :to="`/events/${event.id}`">View</nuxt-link>
       <!-- <nuxt-link :to="'/events/' + event.id">Register</nuxt-link> -->
     </div>
   </div>
