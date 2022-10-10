@@ -17,10 +17,34 @@
     },
     {
       "id": 2,
-      "title": "Indoor Sky Diving",
-      "description": "Wanna fall from the sky?",
+      "title": "Learn To Shuck Oysters",
+      "description": "With Oyster Pros Andrew and Brian",
       "location": "West-End",
-      "date": "November 2022",
+      "date": "November 3, 2022",
+      "time": "12pm"
+    },
+    {
+      "id": 6,
+      "title": "Rock Climbing Indoors",
+      "description": "A little less height maybe?",
+      "location": "Basecamp on Bloor",
+      "date": "December 12th, 2022",
+      "time": "12pm"
+    },
+    {
+      "id": 4,
+      "title": "Race A Dirt Bike",
+      "location": "Ganaraska Trails",
+      "date": "May 17, 2023",
+      "time": "12:00"
+    },
+
+    {
+      "id": 5,
+      "title": "Rock Climbing Outdoors",
+      "description": "Now we're talking",
+      "location": "Hamilton",
+      "date": "July 3rd 2023",
       "time": "12pm"
     }
   ]

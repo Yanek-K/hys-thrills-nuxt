@@ -1,7 +1,12 @@
 <template>
   <div>
+    <h2 class="page-title">Upcoming Events</h2>
     <div class="events">
-      <EventCard v-for="event in events" :key="event.id" :event="event" />
+      <EventCard
+        v-for="event in upcomingEvents"
+        :key="event.id"
+        :event="event"
+      />
     </div>
   </div>
 </template>
@@ -15,7 +20,7 @@ export default {
       )
       .then((response) => {
         return {
-          events: response.data,
+          upcomingEvents: response.data,
         }
       })
   },
@@ -23,9 +28,15 @@ export default {
 </script>
 
 <style scoped>
+.page-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .events {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
 }
 </style>
