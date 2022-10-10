@@ -12,17 +12,15 @@
 </template>
 
 <script>
+import EventService from '@/services/EventService'
+
 export default {
-  async asyncData({ $axios }) {
-    return await $axios
-      .get(
-        'https://my-json-server.typicode.com/Yanek-K/hys-thrills-nuxt/events'
-      )
-      .then((response) => {
-        return {
-          upcomingEvents: response.data,
-        }
-      })
+  asyncData() {
+    return EventService.getEvents().then((response) => {
+      return {
+        upcomingEvents: response.data,
+      }
+    })
   },
 }
 </script>
