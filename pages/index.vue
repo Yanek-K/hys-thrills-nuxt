@@ -8,15 +8,17 @@
 
 <script>
 export default {
-  data() {
-    return {
-      events: [],
-    }
+  async asyncData({ $axios }) {
+    return await $axios
+      .get(
+        'https://my-json-server.typicode.com/Yanek-K/hys-thrills-nuxt/events'
+      )
+      .then((response) => {
+        return {
+          events: response.data,
+        }
+      })
   },
-
-  // async asyncData({ axios }) {
-  //   events = await axios.get("")
-  // },
 }
 </script>
 
