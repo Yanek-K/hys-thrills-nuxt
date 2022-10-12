@@ -1,13 +1,13 @@
 <template>
   <div>
     <h2 class="page-title">Upcoming Events</h2>
-    <div class="events">
+    <!-- <div class="events">
       <EventCard
         v-for="event in upcomingEvents"
         :key="event.id"
         :event="event"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 

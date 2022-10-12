@@ -13,7 +13,9 @@ export default {
         `https://my-json-server.typicode.com/Yanek-K/hys-thrills-nuxt/events/${params.id}`
       )
       return { event }
-    } catch (e) {}
+    } catch (e) {
+      return { name: 'NetworkError' }
+    }
   },
 }
 </script>
